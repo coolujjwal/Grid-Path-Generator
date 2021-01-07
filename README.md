@@ -15,7 +15,7 @@ In this Application,
        2. User can insert Wall or Obstacles any number of times Similarly He can remove it also.
        3. User can change the size of Grid (By default it is 42 X 60). The maximum size is also 42 X 60.
        4. If there is no Path Exist for a Grid then an Alert box will Pop-up.
-       5. In the Algorithm which is Implemented, Only Right and Down moves have been considered.
+       5. In the Algorithm which is Implemented, Only Left, Right, Up and Down moves have been considered.
        
 # Screen Shots
 
