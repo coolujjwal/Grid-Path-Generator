@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&display=swap">
+		<title>Grid Path Generator</title>
+	</head>
+	<body >
+		<aside id="theme1">
+			<div align = "center" id="theme2">
+				<button type = "button" id = "Instructions" onclick = "instructionsAlert()">Instructions</button>	<!-- instructions button -->
+				<button type="button" id="theme-toggle" onclick="changeTheme()">Dark</button>
+			</div>
+			<div id="pathDesignButtons" class="pathDesignPanel" id="theme3">							<!-- for selecting the action to be performed on box-click -->
+				<button type = "button" class = "Button" id = "Starting point">Beginning Point</button>
+				<button type = "button" class = "Button" id = "Ending point">Destination Point</button>
+				<button type = "button" class = "Button" id = "Walls">Obstacles/ Walls</button>
+				<i><p id = 'p' ></p></i>							<!-- current action guide -->
+			</div>
+			<div class = 'algorithmPanel' id="algo_panel" align = "left" id="theme4">
+				<p id = '1' align = "center">Choose algorithm </p>					<!-- radio buttons for choosing algo, only A* will work for now. -->
+			        <label><input type="radio" name="algo" value=2 checked/> Breadth First Search </label><br>
+			        <label><input type="radio" name="algo" value=3 /> Dijkstra </label><br>
+				<p id = 'algoSelected' align = "center"></p>
+			</div>
+			<div id="play_panel" class="left_panel" align = "center" id="theme5">
+      			<button type = "button" id = "Start search" class="control_button" onclick = "pathfinding()">Let's begin!</button>	<!-- start button -->
+  			</div>
+			<div id="theme6">
+				<p id = 'coordinates' class = 'pointInfo'>Coordinates </p>	<!-- display coordiantes and main points -->
+				<p id = 'startPoint' class = 'pointInfo'></p>
+				<p id = 'endPoint' class = 'pointInfo'></p>	
+			</div>	
+			<div id="theme7">	
+				<p>Number of rows : <input type="number" id="numberOfRows" min="2" max="42"></p> 	<!-- change grid size from here -->
+				<p>Number of columns : <input type="number" id="numberOfColumns" min="2" max="60"></p>
+				<button type = "button" class = "gid_button" id="resetGrid" onclick = "changeGridSize()">Reset grid</button>
+				<p id = "gridSize">Rows : 42, Columns : 60</p>
+			</div>
+		</aside>
+		<main id="theme8">
+			<div id = "grid" class = "gridContainer" id="theme9"></div>	<!-- grid to be added here-->
+		</main>
+		<script type="text/javascript" src="./GridArray.js"></script>
+		<script type="text/javascript" src="./themeToggle.js"></script>
+		<script type="text/javascript" src="./GridScript.js"></script>	
+		<script type="text/javascript" src="./Algorithm/bfs.js"></script> 
+		<script type="text/javascript" src="./Algorithm/dijkstra.js"></script> 
+	</body>
+</html>

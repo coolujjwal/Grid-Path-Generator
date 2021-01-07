@@ -1,0 +1,65 @@
+* {	
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+}
+html {
+	height : 100%;
+	width: 100%;
+}
+body {
+	display: grid;
+	grid-template-columns: 25% 75%;
+	grid-template-rows: 100vh;
+    grid-gap: 0.2em;
+}
+body {
+  	margin: 0 auto;
+ 	max-width: 99vw;  				
+}			
+main {
+	background: rgb(255,255,255);
+  	display: flex;
+  	align-items: center;
+	justify-content: center;
+}
+aside {
+	background:  #3b1b03;
+	color: blanchedalmond;
+  	display: grid;
+	align-items: top;
+	grid-template-rows : 5vh;
+	justify-content: center;
+    padding-top : 5px;
+}
+#Instructions{
+	background: rgba(255,255,0,0.7);
+	border-radius: 5px;
+	font-weight: bold;
+}
+.Button{
+	display: inline-block;
+	border-radius: 5px;
+	width: 30%;
+	text-align: center;
+	padding-left: 1px;
+}
+.control_button{
+	display: inline-block;
+	border-radius: 5px;
+	width: 32%;
+	top: 230%;
+	padding-right: 10px;
+	border-collapse: separate;
+	border-spacing: 20px;
+	text-align: center;
+}
+.box { 
+	border : 1px solid black ;
+	padding : 1vmin 1vmin ;
+	background: rgba(200,200,200,0.2);
+}
+.row {
+	display : flex ;
+	justify-content: center ;
+}
