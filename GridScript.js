@@ -198,7 +198,7 @@ function pathfinding() {
 	path = [];
 	open=[];
 	close=[];	//empty the path array from previous path
-	
+	if(selectedAlgo == 1){	bi = 'Astar';	path= Astar(array, start_i, start_j, end_i, end_j);	}
 	if(selectedAlgo == 2){	bi = 'Breadth Fist Search';	path= BFS(array, start_i, start_j, end_i, end_j);	}	
 	if(selectedAlgo == 3){	bi = 'Dijkstra';	path= Dijkstra(array, start_i, start_j, end_i, end_j);	}
 
