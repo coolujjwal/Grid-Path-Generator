@@ -21,8 +21,10 @@
 			</div>
 			<div class = 'algorithmPanel' id="algo_panel" align = "left" id="theme4">
 				<p id = '1' align = "center">Choose algorithm </p>					<!-- radio buttons for choosing algo, only A* will work for now. -->
-			        <label><input type="radio" name="algo" value=2 checked/> Breadth First Search </label><br>
+					<!-- <label><input type="radio" name="algo" value=1 checked/> A* </label><br> -->
+					<label><input type="radio" name="algo" value=2 checked/> Breadth First Search </label><br>
 			        <label><input type="radio" name="algo" value=3 /> Dijkstra </label><br>
+					<label><input type="radio" name="algo" value=1 /> Astar </label><br>
 				<p id = 'algoSelected' align = "center"></p>
 			</div>
 			<div id="play_panel" class="left_panel" align = "center" id="theme5">
@@ -46,7 +48,8 @@
 		<script type="text/javascript" src="./GridArray.js"></script>
 		<script type="text/javascript" src="./themeToggle.js"></script>
 		<script type="text/javascript" src="./GridScript.js"></script>	
+		<script type="text/javascript" src="./Algorithm/astar.js"></script>
 		<script type="text/javascript" src="./Algorithm/bfs.js"></script> 
-		<script type="text/javascript" src="./Algorithm/dijkstra.js"></script> 
+		<script type="text/javascript" src="./Algorithm/dijkstra.js"></script>
 	</body>
 </html>
