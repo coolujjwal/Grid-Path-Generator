@@ -24,8 +24,8 @@ main {
 	justify-content: center;
 }
 aside {
-	background:  #3b1b03;
-	color: blanchedalmond;
+	background:  #d442fc;
+	color: rgb(0, 0, 0);
   	display: grid;
 	align-items: top;
 	grid-template-rows : 5vh;
