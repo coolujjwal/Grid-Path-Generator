@@ -20,8 +20,8 @@ function changeTheme()
         th8.style.background="#000001";
     }
     else{
-        th1.style.background="#3b1b03";
-        th1.style.color="#fff";
+        th1.style.background="#d442fc";
+        th1.style.color="#000";
         th2.innerHTML="Dark";
         th8.style.background="#fff";
     }
